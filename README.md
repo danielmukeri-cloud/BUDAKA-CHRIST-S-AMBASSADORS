@@ -1,2 +1,259 @@
-# BUDAKA-CHRIST-S-AMBASSADORS
-ambassadors of Christ
+export default function BudakaChristsAmbassadorsWebsite() {
+  const movingText = "WE ARE AMBASSADORS OF CHRIST, YOU ARE MOST WELCOME • ";
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-red-950 via-red-800 to-yellow-200 text-gray-900 font-sans overflow-hidden relative">
+      {/* Animated Background */}
+      <div className="absolute inset-0 overflow-hidden opacity-20">
+        <div className="absolute top-20 whitespace-nowrap animate-marquee text-4xl md:text-6xl font-black text-white tracking-widest drop-shadow-2xl">
+          {movingText.repeat(12)}
+        </div>
+
+        <div className="absolute top-1/2 whitespace-nowrap animate-marquee2 text-3xl md:text-5xl font-black text-yellow-300 tracking-widest drop-shadow-2xl">
+          {movingText.repeat(12)}
+        </div>
+
+        <div className="absolute bottom-20 whitespace-nowrap animate-marquee text-4xl md:text-6xl font-black text-red-100 tracking-widest drop-shadow-2xl">
+          {movingText.repeat(12)}
+        </div>
+      </div>
+
+      {/* Animations */}
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+
+        @keyframes marquee2 {
+          0% { transform: translateX(-50%); }
+          100% { transform: translateX(0%); }
+        }
+
+        .animate-marquee {
+          animation: marquee 20s linear infinite;
+        }
+
+        .animate-marquee2 {
+          animation: marquee2 24s linear infinite;
+        }
+      `}</style>
+
+      <div className="relative z-10">
+        {/* Hero Section */}
+        <header className="bg-black/40 backdrop-blur-sm text-white py-20 px-6 shadow-lg border-b border-yellow-300 relative overflow-hidden">
+          {/* Blue Line */}
+          <div className="absolute bottom-0 left-0 w-full h-3 bg-blue-600 shadow-[0_0_25px_#2563eb]"></div>
+
+          {/* Moving Text Below Blue Line */}
+          <div className="absolute bottom-3 left-0 w-full overflow-hidden bg-blue-950/80 py-3 border-t-2 border-blue-400 border-b-2 border-blue-400">
+            <div className="animate-marquee whitespace-nowrap text-lg md:text-2xl font-extrabold text-white tracking-wider drop-shadow-xl">
+              {movingText.repeat(15)}
+            </div>
+          </div>
+
+          <div className="max-w-6xl mx-auto text-center relative z-10 pb-16">
+            {/* Logo Centered */}
+            <div className="flex justify-center mb-8">
+              <img
+                src="https://via.placeholder.com/150x150.png?text=BCA+LOGO"
+                alt="Budaka Christ's Ambassadors Logo"
+                className="w-28 h-28 md:w-36 md:h-36 rounded-full border-4 border-yellow-400 shadow-2xl bg-white object-cover"
+              />
+            </div>
+
+            <h1 className="text-5xl md:text-7xl font-extrabold tracking-wide mb-6 drop-shadow-2xl">
+              BUDAKA CHRIST'S AMBASSADORS
+            </h1>
+
+            <p className="text-xl md:text-2xl font-light mb-6">
+              Sharing the Love of Christ Through Worship, Prayer & Community Outreach
+            </p>
+
+            <p className="text-lg md:text-xl font-medium text-yellow-200">
+              Located in Budaka Town along Budaka–Lyama Road, off Mbale–Pallisa Road
+            </p>
+
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
+              <button className="bg-yellow-400 hover:bg-yellow-500 text-red-900 font-bold px-8 py-4 rounded-2xl shadow-2xl transition duration-300 text-lg">
+                Join Us Today
+              </button>
+
+              <a
+                href="https://www.youtube.com/@christambassadors223"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white hover:bg-red-100 text-red-900 font-bold px-8 py-4 rounded-2xl shadow-2xl transition duration-300 border-2 border-red-900 text-lg"
+              >
+                Subscribe on YouTube
+              </a>
+            </div>
+          </div>
+        </header>
+
+        {/* Navigation */}
+        <nav className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50">
+          <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8 py-5 text-lg font-bold">
+            <a href="#about" className="hover:text-red-700 transition">About</a>
+            <a href="#services" className="hover:text-red-700 transition">Services</a>
+            <a href="#ministries" className="hover:text-red-700 transition">Ministries</a>
+            <a href="#gallery" className="hover:text-red-700 transition">Gallery</a>
+            <a href="#contact" className="hover:text-red-700 transition">Contact</a>
+          </div>
+        </nav>
+
+        {/* About */}
+        <section id="about" className="py-20 px-6 bg-white/90 backdrop-blur-sm">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-6">
+              About Our Ministry
+            </h2>
+
+            <p className="text-lg leading-8 text-gray-700">
+              Budaka Christ's Ambassadors is a vibrant Christian ministry dedicated to spreading the Gospel,
+              uplifting communities, and empowering believers through prayer, worship, discipleship, and outreach.
+              Our mission is to lead people into a deeper relationship with Jesus Christ and inspire hope in our generation.
+            </p>
+          </div>
+        </section>
+
+        {/* Services */}
+        <section id="services" className="py-20 px-6 bg-yellow-50/90">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-red-900 mb-14">
+              Church Services
+            </h2>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: 'Sunday Worship',
+                  text: 'Join us every Sunday for spirit-filled worship, inspiring preaching, and fellowship.'
+                },
+                {
+                  title: 'Prayer Meetings',
+                  text: 'Experience powerful prayer sessions focused on healing, deliverance, and spiritual growth.'
+                },
+                {
+                  title: 'Youth Fellowship',
+                  text: 'Empowering the youth through mentorship, worship nights, and community programs.'
+                }
+              ].map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-8 rounded-3xl shadow-2xl hover:scale-105 transition duration-300"
+                >
+                  <h3 className="text-2xl font-bold mb-4 text-red-800">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-700 leading-7">{service.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Gallery */}
+        <section id="gallery" className="py-20 px-6 bg-white/90">
+          <div className="max-w-7xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-red-900 mb-6">
+              Ministry Gallery
+            </h2>
+
+            <p className="text-lg text-gray-700 mb-12">
+              Continuously upload and display ministry photos, crusades, worship moments, conferences, and outreach programs.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1200&auto=format&fit=crop',
+                'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?q=80&w=1200&auto=format&fit=crop',
+                'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop'
+              ].map((img, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-3xl shadow-2xl hover:scale-105 transition duration-300"
+                >
+                  <img
+                    src={img}
+                    alt="Church Event"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-14 bg-yellow-50 border-4 border-dashed border-red-400 rounded-3xl p-10 shadow-xl">
+              <h3 className="text-3xl font-bold text-red-900 mb-4">
+                Add More Images Anytime
+              </h3>
+
+              <p className="text-gray-700 text-lg mb-8">
+                Upload new ministry photos regularly to keep your church website fresh and inspiring.
+              </p>
+
+              <input
+                type="file"
+                multiple
+                className="bg-white border-2 border-red-300 p-4 rounded-2xl shadow-md w-full md:w-auto"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="py-20 px-6 bg-red-950 text-white">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              Contact Us
+            </h2>
+
+            <div className="space-y-4 text-lg mb-10">
+              <p>
+                <strong>Location:</strong> Budaka Town, Along Budaka–Lyama Road, Off Mbale–Pallisa Road
+              </p>
+              <p>
+                <strong>Email:</strong> budakachristsambassadors@gmail.com
+              </p>
+              <p>
+                <strong>Phone:</strong> +256 757366682 / +256 783228055
+              </p>
+            </div>
+
+            <form className="mt-10 grid gap-6 max-w-2xl mx-auto">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="p-5 rounded-2xl bg-white text-black border-4 border-yellow-300 shadow-xl placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400"
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="p-5 rounded-2xl bg-white text-black border-4 border-yellow-300 shadow-xl placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400"
+              />
+
+              <textarea
+                rows="6"
+                placeholder="Send Message"
+                className="p-5 rounded-2xl bg-white text-black border-4 border-yellow-300 shadow-xl placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-yellow-400"
+              ></textarea>
+
+              <button className="bg-yellow-400 hover:bg-yellow-500 text-red-900 font-bold py-5 rounded-2xl transition duration-300 shadow-2xl text-lg">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-black text-white text-center py-8">
+          <p className="text-lg">
+            © 2026 Budaka Christ's Ambassadors. All Rights Reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+  );
+}
+
